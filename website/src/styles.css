@@ -1,10 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
+  margin:0;
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
@@ -14,23 +11,41 @@ body{
   font-family: "Arial";
   color: White;
   font-size: 25px;
-  background: RosyBrown ;
+  background:#667399;
   }
 
 mat-toolbar{
   opacity: 0.5;
   }
 
+.texta{
+text-align:center
+  }
+
+.maintitle{
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 70px;
+  text-shadow: 2px 2px Black;
+  white-space: nowrap;
+  }
 .other{
-  font-family: "Arial";
+  font-family: 'Raleway', sans-serif;
   color: white;
   font-size: 40px;
-  text-shadow: 2px 2px Black;
   }
 
 .navbar{
   background-color: black;
   opacity: 0.4;
+  }
+
+.pagecenter{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
   }
 
 .centerpage{
@@ -45,12 +60,18 @@ mat-toolbar{
 
 .divspace{
   width: auto;
-  height: 100vh;}
+  height: 100vh;
+  background-image: url(assets/background1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-colour: RosyBrown;}
 
 .content{
-  width: 1000px;
   min-height: calc(100vh - 55px);
-}
+  }
+
 .mat-tab-label{
 height:55px !important;
 background-color:black;
@@ -59,3 +80,31 @@ color: white;}
 .mat-tab-label-active{
 color: LightSeaGreen;
 }
+
+
+
+
+.bcontent1{
+  margin: 0 auto;
+  display: table;
+  padding-top:100px;}
+
+.content1{
+  font-family: 'Raleway', sans-serif;
+  display: table-row;
+  }
+
+.pic1{
+  width:400px;
+  display: table-cell;
+  }
+
+.text1{
+  width: 400px;
+  padding: 10px;
+  display:table-cell;
+  vertical-align: middle;
+  }
+
+#me{
+width:400px}

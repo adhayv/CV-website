@@ -1,56 +1,69 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class = "divspace"></div>
-<div class = "centerpage">
-  ADHAY VRAICH
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<div class="divspace"></div>
+<div class="pagecenter">
+  <p class="maintitle">
+    <b>ADHAY VRAICH</b>
+  </p>
   <p class="other">Aspiring Developer</p>
   <div>
-    <button mat-fab>
-      <mat-icon></mat-icon>
+    <button mat-mini-fab (click)="scrollDown()">
+      <mat-icon>keyboard_arrow_down</mat-icon>
     </button>
   </div>
-  </div>
+</div>
 
-
-<!--<mat-toolbar>
-</mat-toolbar>-->
 <mat-tab-group>
-  <mat-tab label="Home">
+  <mat-tab label="About Me">
     <div class="content">
-      0.0
+      <div class="bcontent1">
+        <div class="content1">
+          <div class="pic1">
+            <img id = "me" src="../../assets/profile.JPG">
+          </div>
+          <div class="text1">
+            <p>My name is Adhay and I am currently studying computer science at Auckland University of Technology.
+              I am always keen to take on new challenges and learn new technologies!
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </mat-tab>
   <mat-tab label="Experience">
-    <div class="content">
-      Flow Academy of Motion — February 2017 - PRESENT
-      STAFF INSTRUCTOR
-      ●	Design curriculum and lead classes of 5-20 students in parkour and gymnastics exercises.
-      ●	Supervise and mentor students ranging from ages 4-18 years to maintain a fun and safe environment.
-      ●	Manage administrative office duties, such as updating the academy’s customer database, processing payments, class scheduling, and providing customer service over the phone and in person.
-      ●	Plan and execute the marketing campaign through social media, email, and local marketing in Auckland.
-      ●	Quickly promoted to senior training staff and given extra responsibility of administrative and marketing tasks
-      Albany Minigolf — February 2015 - December 2016
-      TEAM MEMBER
-      ●	Managed the day-to-day operation of the business, including handling transactions, resolving customers’ problems, and managing the store café.
-      ●	Consistently received excellent customer service reviews
+    <div class="content texta">
+      <b>Flow Academy of Motion</b>
+      <p>February 2017 - PRESENT</p>
+      <p>Instructor/Teacher and Admin Work</p>
+      <p>Part time</p>
+      <br>
+      <b>Albany Minigolf</b>
+      <p>February 2015 - December 2016</p>
+      <p>Team Member</p>
+      <p>Part time</p>
     </div>
   </mat-tab>
-  <mat-tab label="Skillset">
+  <mat-tab label="Skill Set">
     <div class="content">
       <p>Languages: Python, Java, SQL, HTML, R</p>
+      <br>
       <p>Applications: Microsoft Word, Microsoft Excel, Microsoft PowerPoint, Microsoft Access, Eclipse, IntelliJ</p>
+      <br>
       <p>Skills: Teamwork, problem solving, customer service, high level of communications skills, self-motivated</p>
+      <br>
       <p>Concepts: Web development, Agile, Scrum</p>
     </div>
   </mat-tab>
   <mat-tab label="Contact Me">
     <div class="content">
-      2
-    </div></mat-tab>
+      <p>Email: adhayv@gmail.com</p>
+      <br>
+      <p>Linkedin: linkedin.com/in/adhay-vraich/</p>
+    </div>
+  </mat-tab>
 </mat-tab-group>
 
-
-
-<!--<mat-card class = "card">
-</mat-card>-->
 
 <router-outlet></router-outlet>

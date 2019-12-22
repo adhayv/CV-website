@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'website';
+  scrollDown(){
+  window.scrollTo(0,document.body.scrollHeight);
+  }
 }
+
